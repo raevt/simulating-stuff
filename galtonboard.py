@@ -41,7 +41,7 @@ def output(positions):
         sum_pos = []
         for n in possible_pos:
             sum_pos.append(freqs[n])
-        # for a line rather than histogram, use: plt.plot(possible_pos,sum_pos)
+        plt.plot(possible_pos,sum_pos)
         plt.hist(possible_pos, len(possible_pos), weights=sum_pos)
         plt.show()
     else:
