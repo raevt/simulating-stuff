@@ -5,8 +5,8 @@ import random
 import matplotlib.pyplot as plt
 
 # Settings
-num_rows = 30 # Set the number of rows on either side of the starting peg
-num_balls = 2000 # Set the number of balls/agents on the board
+num_rows = 11 # Set the number of rows on either side of the starting peg
+num_balls = 200 # Set the number of balls/agents on the board
 use_matplotlib = 1 # If yes/1, outputs a matplotlib histogram. Otherwise, prints a horizontal bar chart.
 
 def simulate():
