@@ -19,11 +19,14 @@ def simulate():
     return positions
 
 def output(positions):
+    # Create frequency dict
     freqs = {}
     for n in range(-1*num_rows,num_rows+1):
         freqs[n] = 0
+    # Record frequencies
     for n in positions:
         freqs[n] += 1
+    # Output frequencies
     print("Frequencies")
     for i in range(-1*num_rows,num_rows+1):
         print(f"{i}:",end="")
