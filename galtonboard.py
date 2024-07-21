@@ -19,13 +19,6 @@ def simulate():
     return positions
 
 def output(positions):
-    # Create frequency dict
-    freqs = {}
-    for n in range(-1*num_rows,num_rows+1):
-        freqs[n] = 0
-    # Record frequencies
-    for n in positions:
-        freqs[n] += 1
     # Identify which positions are possible
     possible_pos = []
     for i in range(-1*num_rows,num_rows+1):
@@ -33,6 +26,13 @@ def output(positions):
             possible_pos.append(i)
         elif (num_rows % 2 != 0) and (i % 2 != 0):
             possible_pos.append(i)
+    # Create frequency dict
+    freqs = {}
+    for n in possible_pos:
+        freqs[n] = 0
+    # Record frequencies
+    for n in positions:
+        freqs[n] += 1
     # Output frequencies
     print("Frequencies")
     for i in possible_pos:
