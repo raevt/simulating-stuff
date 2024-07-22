@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Settings
 num_rows = 11 # Set the number of rows
 num_balls = 200 # Set the number of balls/agents on the board
-use_matplotlib = 1 # If yes/1, outputs a matplotlib histogram. Otherwise, prints a horizontal bar chart.
+use_matplotlib = 1 # If 1, outputs a matplotlib histogram. Otherwise, prints a horizontal bar chart.
 
 def simulate():
     # Create list
